@@ -1,0 +1,51 @@
+
+####
+GET http://localhost:4000/api/empleado
+####
+POST http://localhost:4000/api/empleado
+Content-Type: application/json
+
+{
+    "legajo":"U6025",
+    "nombre":"luis",
+    "apellido":"cortes",
+    "id_base":"2",
+    "clave":"papa"
+
+}
+
+###
+
+
+GET http://localhost:4000/api/empleado/legajo/U6554
+
+###
+
+
+GET http://localhost:4000/api/base/1
+
+###
+
+
+GET http://localhost:4000/api/coordenadas/1
+
+###
+
+
+GET http://localhost:4000/api/asis/U2525
+
+####
+GET http://localhost:4000/api/asis
+
+
+###
+POST http://localhost:4000/api/asis
+Content-Type: application/json
+
+{
+    "id_asistencia":"6",
+    "fecha":"2022-10-06",
+    "hora_entrada":"10:40:50",
+    "hora_salida":"10:20:55",
+    "legajo":"U2525"
+}
